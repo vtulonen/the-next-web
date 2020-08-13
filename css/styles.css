@@ -133,10 +133,89 @@ html, body {
 	color:white;
 }
 
-.cover__header > ul > li {
+.underline > li {
 	display: inline-block;
 }
 
+
+/* Latest news section */
+
+
+
+.latest-news {
+	margin: 5%;
+}
+.news-story {
+	display: flex;
+	padding: 5% 0 0;
+}
+
+.news-story__description >* {
+	padding: 0 1em .5em;
+}
+.news-story__image {
+	width: 75px;
+	height: 75px;
+	display: block;
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230-540x270.jpg");
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+/* Funding */
+
+
+.funding {
+	margin: 5%;
+}
+.funding > nav > * {
+	display: block;
+	padding: .5em;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 1em;
+	background-color: rgb(252, 252, 244);
+}
+
+.card__company-img {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.card__name {
+	padding: 20px 0 20px 100px;
+	background-color: #f42;
+}
+
+.card__price {
+	padding: 20px 0 20px 100px;
+	background-color: rgba(255,68,34,.08);
+}
+
+.card__info {
+	padding: 10px;
+	padding-left: 30px;
+	line-height: 25px;
+	font-size: .9em;
+}
+
+.card__underline {
+	padding: 10px;
+	padding-left: 30px;
+	border-top: solid rgba(255,68,34,.25) 1px;
+	font-size: .9em;
+	color: gray;
+	
+}
 
 
 /* Typography */
@@ -149,7 +228,11 @@ h2 { /* cover title */
 	font-size: 1.5em;
 }
 
-.cover__underline {
+.red {
+	color: #f42;
+}
+
+.underline {
 	color:  rgb(202, 202, 202)
 	
 }
