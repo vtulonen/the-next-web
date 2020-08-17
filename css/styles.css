@@ -144,31 +144,57 @@ article {
 }
 
 
-/* Latest news section */
+/* Latest news / deals section */
 
-
-
-.latest-news {
-	margin: 5%;
+.latest-news, .latest-deals {
+	margin: 0 5%;
 }
-.news-story {
+.news-story, .deal {
 	display: flex;
-	padding: 5% 0 0;
+	padding:  0 0 1em;
 }
 
-.news-story__description >* {
+.news-story__description, .deal__description >* {
 	padding: 0 1em .5em;
 }
-.news-story__image {
-	width: 75px;
-	height: 75px;
+
+.small-img {
+	min-width: 75px;
+	min-height: 75px;
 	display: block;
+}
+.news-story__image  {
 	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230-540x270.jpg");
 	background-size: cover;
 	background-position: center;
-
 }
 
+.deal__image-1 {
+	background-image: url("https://cdnp2.stackassets.com/07986b70325d6cbee56fb75c69d9d9ffd3737589/store/opt/596/298/7ebdfe0216a4b4fce806549e584498f3bad81262620568336df84a816517/product_43070_product_shot_wide.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.deal__image-2 {
+	background-image: url("https://cdnp2.stackassets.com/3e109214f44a0e4f1bb544bafe0f8960b2279c0c/store/opt/204/153/1f69ec6265c1c034776b456e955bad34a9e7b31a3b9e3167127598798a71/product_37297_product_shots1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.deal__image-3 {
+	background-image: url("https://cdnp3.stackassets.com/cd03349683ed4716c306bd08980fca7f21467f7d/store/opt/489/367/e9370bd24c3109a01209a9e181e81bf76408636a2c0a528a5cd7770128fb/product_24579_product_shots4.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.price-before {
+	text-decoration: line-through;
+	font-size: .9em;
+}
+
+.price-deal {
+	color: black;
+}
 
 /* Funding */
 
@@ -247,6 +273,7 @@ article {
 
 .latest {
 	display: flex;
+	justify-content: space-between;
 	line-height: 1.3em;
 	padding-left: 1em;
 	padding-top: .1em;
@@ -301,6 +328,10 @@ h2 { /* cover title */
 
 h2.red {
 	margin: 1em 0 .5em;
+}
+
+h3 {
+	font-weight: bold;
 }
 
 h5 {
