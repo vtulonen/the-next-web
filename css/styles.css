@@ -69,7 +69,8 @@ html, body {
 
 .sticky {
 	position: fixed;
-  top: 0;
+	top: 0;
+	z-index: 999;
 }
 
 .page-header__top {
@@ -87,6 +88,10 @@ html, body {
 
 /* Cover */
 
+
+article {
+	position: relative;
+}
 .cover {
 
 	height: auto;
@@ -127,9 +132,10 @@ html, body {
 }
 
 .cover__header {
-	height: 100%;
-	padding: 20% 0 1em 1em;
-	
+	height: auto;
+	padding: 0 0 1em 1em;
+	position: absolute;
+	bottom: 0;
 	color:white;
 }
 
@@ -218,6 +224,71 @@ html, body {
 }
 
 
+
+/* Sections */
+
+.section {
+	margin: 0 5%;
+}
+
+.section h2 {
+	margin-bottom:.7em;
+}
+
+.section__hard-fork {
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 90%), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F08%2Fbitcoin_today-header_bitcoin_today.jpg&signature=b75eca35f42accc83310a4fa4e562088);
+
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 300px;
+	margin-bottom: 0;
+}
+
+.latest {
+	display: flex;
+	line-height: 1.3em;
+	padding-left: 1em;
+	padding-top: .1em;
+	background-color: rgb(252, 252, 244);
+}
+
+.latest > div > h5 {
+	margin-top: .5em;
+}
+
+
+
+.latest img {
+	max-width: 96px;
+	min-height: 96px;
+	margin-left: 1em;
+}
+
+
+.links {
+	color: rgb(80, 80, 80);
+	margin-left: 1em;
+}
+
+.links > li {
+	padding: .5em 0;
+	border-bottom: solid rgb(212, 212, 212) 1px;
+}
+.red-circle > li::before {
+	content: "\2022"; 
+  color: #f42; 
+  display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+
+
+
+
+
+
 /* Typography */
 
 body {
@@ -228,6 +299,14 @@ h2 { /* cover title */
 	font-size: 1.5em;
 }
 
+h2.red {
+	margin: 1em 0 .5em;
+}
+
+h5 {
+	font-size: small;
+}
+
 .red {
 	color: #f42;
 }
@@ -235,4 +314,12 @@ h2 { /* cover title */
 .underline {
 	color:  rgb(202, 202, 202)
 	
+}
+
+.bold {
+	font-weight: bold;
+}
+
+a:hover {
+	cursor: pointer;
 }
