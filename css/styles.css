@@ -310,9 +310,45 @@ article {
 	margin-left: -1em;
 }
 
+/* Nav + icons */
 
+.bottom-nav {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10% 20px;
+	height: 160px;
+	background: #131313;
+	color:#555
+}
 
+.bottom-nav__icons {
+	margin-bottom: 1.5em;
+}
 
+.bottom-nav__links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.bottom-nav__links > li {
+	margin-right: .5em;
+}
+
+.fa {
+	color: gray;
+	padding-right: .5em;
+}
+
+.page-footer {
+	height: 120px;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	padding: 2em;
+	background-color: #000;
+	color: #555;
+}
 
 
 
