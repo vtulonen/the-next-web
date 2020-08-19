@@ -108,6 +108,7 @@ html, body {
 	color: #f42
 }
 
+
 .btn-small {
 	background-color: #fff;
 	width: 4em;
@@ -446,9 +447,18 @@ h5 {
 	font-weight: bold;
 }
 
-a:hover {
+a:hover, i:hover {
 	cursor: pointer;
+	color: white;
 }
+
+span:hover, .fa-search:hover, .fa-bars:hover {
+	cursor: pointer;
+	color:black;
+}
+
+
+	
 
 /* MEDIA QUARIES */
 
