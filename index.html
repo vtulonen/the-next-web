@@ -20,29 +20,45 @@
 
 
   <header class="page-header sticky">
+    <div class="top-nav">
 
-    <div class="page-header__top">
-      <div class="nav-container">
-        <button class="nav-container__button"></button>
+      <div class="nav-button-container">
+        <button class="nav-button-container__button"></button>
       </div>
 
-      <div class="extra-nav display-none toggle-on">
+      <div class="top-nav__black center display-none">
+        <span class="white">News</span>
+        <span>Events ▾</span>
+        <span>Business ▾</span>
+        <span>AMAs</span>
+        <span>Spaces</span>
+        <span>Terms & Conditions</span>
+        <span class="push-right">About</span>
+        <span>Advertise</span>
+        <span>Jobs</span>
+        <span>Contact</span>
+        
+      </div>
+      <div class="top-nav__white center display-none">
         <span>Latest</span>
         <span>Hard Fork</span>
         <span>Plugged</span>
         <span>ReadMe</span>
         <span>Growth Quarters</span>
+        <button class="push-right btn-small">
+          <i class="fa fa-search fa-2x fa-flip-horizontal"></i>
+        </button>
       </div>
 
 
-      <button class="push-right btn-small">
+      <button class="push-right btn-small mobile-only">
         <i class="fa fa-search fa-2x fa-flip-horizontal"></i>
       </button>
       <button class="btn-small toggle-off">
         <i class="fa fa-bars fa-2x"></i>
       </button>
     </div>
-
+    </div>
     <div class="page-header__bottom center">
       <a>Join #TNW2020, our 15th annual flagship event. Get tickets -></a>
     </div>
@@ -51,7 +67,8 @@
 
   <section class="cover">
     <article class="cover__story story-1">
-      <a class="cover--trigger">
+      <div class="cover-gradient"></div>
+      <img class="cover-logo display-none" src="images/tnw.svg">
         <header class="cover__header">
           <h5 class="cover__section">TECH</h5>
           <h2 class="cover__title">How to find special characters on your phone’s keyboard</h2>
@@ -126,7 +143,7 @@
         <a class="news-story__image ns-img-3 small-img"></a>
 
         <div class="news-story__description">
-          <h3>Here’s why you’ve got cravings even though you’re not hungry </h3>
+          <h3>The US could save over $70B if it switched to electric vehicles  </h3>
           <ul class="underline">
             <li>The Conversation</li>
             <li>1 hour ago</li>
@@ -162,7 +179,7 @@
         <a class="news-story__image ns-img-3 small-img"></a>
 
         <div class="news-story__description">
-          <h3>Here’s why you’ve got cravings even though you’re not hungry </h3>
+          <h3>The US could save over $70B if it switched to electric vehicles  </h3>
           <ul class="underline">
             <li>The Conversation</li>
             <li>1 hour ago</li>
@@ -745,8 +762,7 @@
 
 
 
-  <script src="js/scripts.js"></script>
-
+  
 
 
 </body>
