@@ -320,8 +320,19 @@ article {
 	margin: 0 5%;
 }
 
-.section__hard-fork {
+.section__img-1 {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 90%), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F08%2Fbitcoin_today-header_bitcoin_today.jpg&signature=b75eca35f42accc83310a4fa4e562088);
+}
+
+.section__img-2 {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 90%), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2FSnag_3c03a4d5.png&signature=bf8edeff0643b73305c471e0f6edd4d9);
+}
+
+.section__img-3 {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 90%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Oculus_Quest_Front-796x448.jpg);
+}
+
+.section__img {
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -512,7 +523,7 @@ a:hover {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 1em;
 	}
-	.section__hard-fork {
+	.section__img {
 		/* Article bg-img size */
 		height: 300px;
 	}
@@ -553,9 +564,7 @@ a:hover {
 	}
 }
 
-
 /* TODOS */
 
-/* TODO: beautify news section images+text  */
-/* TODO: beautify section section with 					 different images etc */
+
 /* TODO: :hover css on  links*/
